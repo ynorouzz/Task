@@ -25,6 +25,9 @@ def integrate_data(dataPath):
 
     # Select product ids
     products = pd.DataFrame(data_sef_df["products"].tolist())
+    
+    # Convert column names from int to string    
+    products.columns = products.columns.astype(str)
 
     return data_sef_df, products
 
