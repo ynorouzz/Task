@@ -33,7 +33,7 @@ product_id = input()
 
 # Search given product_id in product counts
 found = search_product(product_id_counts, product_id)
-if found:
+if found > 0:
     print('This product sold {0} times'.format(found))
 else:
     print('Product id did not find')
