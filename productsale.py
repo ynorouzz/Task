@@ -27,9 +27,9 @@ data_set = []
 data_files = glob.glob(dataPath + "*.json")
 
 # Concat json files into a list of dataframes
-for file in data_files:
+for json_file in data_files:
 
-    data = pd.read_json(dataPath + '20190207_transactions.json', orient='columns', lines=True)
+    data = pd.read_json(json_file, orient='columns', lines=True)
     data_set.append(data)
 
 # Integrate dataframes into one dataframe    
