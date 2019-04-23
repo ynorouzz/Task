@@ -40,3 +40,18 @@ def data_cleaning(df):
     df = df.dropna(how='all')
     
     return df
+
+
+def search_product(df, product_id):
+    """
+    Search product_id in count of products
+    :param df: product counts per product_id
+    :param df: product_id as string
+    """
+    if product_id in df.index:
+
+        return df[product_id]
+
+    else:
+
+        return -1
