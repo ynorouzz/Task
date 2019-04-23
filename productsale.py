@@ -7,7 +7,7 @@ dataPath = './Data/'
 ################################ 
 # Process single json file
 ################################
-print('Run script for single file.')
+print('\n Run script for single file.')
 
 # Load json data to dataframe
 data = pd.read_json(dataPath+'20190207_transactions.json', orient='columns', lines=True)
@@ -21,7 +21,7 @@ print('How many times a product is sold\n', products.count())
 ################################ 
 # Extend to multiple json files
 ################################
-print('Run script to support multiple files.')
+print('\n Run script to support multiple files.')
 
 data_sef_df, products = integrate_data(dataPath)
 
