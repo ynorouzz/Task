@@ -28,3 +28,12 @@ def integrate_data(dataPath):
 
     return data_sef_df, products
 
+def data_cleaning(df):
+    """
+    Remove columns and rows if all items are NULL
+    :param df: input datafarme
+    :return df: cleaned dataframe
+    """
+    df = df.dropna(how='all')
+    
+    return df
