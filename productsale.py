@@ -15,7 +15,7 @@ data = pd.read_json(dataPath+'20190207_transactions.json', orient='columns', lin
 products = pd.DataFrame(data["products"].tolist())
 
 # Print frequency of products
-print(' How many times a product  \n', products.count())
+print('How many times a product sold\n', products.count())
 
 ################################ 
 # Extend to multiple json files
@@ -28,7 +28,7 @@ product_id_counts = products.count()
 print(' How many times a product  \n', product_id_counts)
 
 # Get a product_id from the input
-print('Enter the product id to find the number of sales:')
+print('\n Enter the product id to find the number of sales:')
 product_id = input()
 
 # Search given product_id in product counts
