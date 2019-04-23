@@ -24,4 +24,5 @@ print(' How many times a product  \n', products.count())
 data_sef_df, products = integrate_data(dataPath)
 
 #  Print frequency of products
-print(' How many times a product  \n', products.count())
+product_id_counts = products.count()
+print(' How many times a product  \n', product_id_counts)
