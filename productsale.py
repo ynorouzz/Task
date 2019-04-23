@@ -26,3 +26,14 @@ data_sef_df, products = integrate_data(dataPath)
 #  Print frequency of products
 product_id_counts = products.count()
 print(' How many times a product  \n', product_id_counts)
+
+# Get a product_id from the input
+print('Enter the product id to find the number of sales:')
+product_id = input()
+
+# Search given product_id in product counts
+found = search_product(product_id_counts, product_id)
+if found:
+    print('This product sold {0} times'.format(found))
+else:
+    print('Product id did not find')
