@@ -26,3 +26,8 @@ Attached the transactions of 7th of February.
 - document the assumptions you make.
 
 - (EXTRA) - add authorization
+
+ # Assumptions
+ - The customer_id and product_id are positive integer numbers
+ - transanctions list in json file shows the product_id of sold products
+ 
